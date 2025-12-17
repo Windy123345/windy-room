@@ -24,12 +24,13 @@
         h2 { font-size: 2em; color: #2c3e50; padding-bottom: 15px; margin-bottom: 30px; border-bottom: 2px solid; text-align: center; letter-spacing: 1px; }
         .song-title { border-color: #5d8aa8; color: #5d8aa8; }
         .qing-title { border-color: #b8860b; color: #b8860b; }
-        /* 核心修改：桌面端固定为一行三列 */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 固定3列 */
+            grid-template-columns: repeat(3, 1fr);
             gap: 35px;
         }
+        @media (max-width: 1100px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) { .gallery { grid-template-columns: 1fr; } }
         .porcelain-card {
             background: #fff;
             border-radius: 12px;
@@ -78,15 +79,6 @@
             color: #95a5a6;
             font-size: 0.9em;
         }
-        /* 响应式设计：在中等屏幕（如平板）调整为2列，在小屏幕（手机）调整为1列 */
-        @media (max-width: 1100px) {
-            .gallery { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 768px) {
-            .gallery { grid-template-columns: 1fr; }
-            h1 { font-size: 2.2em; }
-            .container { padding: 25px; }
-        }
     </style>
 </head>
 <body>
@@ -101,64 +93,64 @@
             <h2 class="song-title">宋 · 空灵之境</h2>
             <p class="intro" style="text-align: center; margin-bottom: 30px; font-style: italic;">“无纹处皆是诗，无色中自有韵”</p>
             <div class="gallery">
-    <!-- 宋代文物卡片 - 图片链接已更新为永久图床链接 -->
-    <div class="porcelain-card">
-        <img src="https://s2.loli.net/2024/07/21/ABC123def456.jpg" alt="定窑白釉刻花花卉纹梅瓶" class="card-img">
-        <div class="card-content">
-            <h3>定窑白釉刻花花卉纹梅瓶</h3>
-            <p>白釉莹洁如雪，仅以疏朗刻花点缀。刻与不刻之间，形成精妙的虚实节奏，凸显了宋代“以简驭繁”的至高审美意趣。</p>
-            <a href="https://www.dpm.org.cn/collection/ceramics/231242.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-        </div>
-    </div>
-    <div class="porcelain-card">
-        <img src="https://s2.loli.net/2024/07/21/GHI789jkl012.jpg" alt="汝窑天青釉三足樽承盘" class="card-img">
-        <div class="card-content">
-            <h3>汝窑天青釉三足樽</h3>
-            <p>天青一色，宛如“雨过天青云破处”。此樽不施纹饰，仅凭釉色深浅的微妙渐变与古朴器型，便构建出清寂空灵之美。</p>
-            <a href="https://www.dpm.org.cn/collection/ceramics/228360.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-        </div>
-    </div>
-    <div class="porcelain-card">
-        <img src="https://s2.loli.net/2024/07/21/MNO345pqr678.jpg" alt="官窑粉青釉葵花式洗" class="card-img">
-        <div class="card-content">
-            <h3>官窑粉青釉葵口洗</h3>
-            <p>通体施粉青厚釉，温润如玉。器型优雅，无纹而雅。这份极致的素净，完美诠释了“道在器中”的宋式美学。</p>
-            <a href="https://www.dpm.org.cn/collection/ceramics/228596.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-        </div>
-    </div>
-</div>
+                <!-- 宋代文物 - 图片链接已修正为GitHub Raw链接 -->
+                <div class="porcelain-card">
+                    <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E5%AE%9A%E7%AA%91%E7%99%BD%E9%87%89%E5%88%BB%E8%8A%B1%E8%8A%B1%E5%8D%89%E7%BA%B9%E6%A2%85%E7%93%B6.png" alt="定窑白釉刻花花卉纹梅瓶" class="card-img">
+                    <div class="card-content">
+                        <h3>定窑白釉刻花花卉纹梅瓶</h3>
+                        <p>白釉莹洁如雪，仅以疏朗刻花点缀。刻与不刻之间，形成精妙的虚实节奏，凸显了宋代“以简驭繁”的至高审美意趣。</p>
+                        <a href="https://www.dpm.org.cn/collection/ceramics/231242.html" target="_blank" class="card-button">查看故宫藏品详情</a>
+                    </div>
+                </div>
+                <div class="porcelain-card">
+                    <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E6%B1%9D%E7%AA%91%E5%A4%A9%E9%9D%92%E9%87%89%E4%B8%89%E8%B6%B3%E6%A8%BE%E6%89%BF%E7%9B%98.png" alt="汝窑天青釉三足樽承盘" class="card-img">
+                    <div class="card-content">
+                        <h3>汝窑天青釉三足樽</h3>
+                        <p>天青一色，宛如“雨过天青云破处”。此樽不施纹饰，仅凭釉色深浅的微妙渐变与古朴器型，便构建出清寂空灵之美。</p>
+                        <a href="https://www.dpm.org.cn/collection/ceramics/228360.html" target="_blank" class="card-button">查看故宫藏品详情</a>
+                    </div>
+                </div>
+                <div class="porcelain-card">
+                    <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E5%AE%98%E7%AA%91%E7%B2%89%E9%9D%92%E9%87%89%E8%91%B5%E8%8A%B1%E5%BC%8F%E6%8A%98%E6%B2%BF%E6%B4%97.png" alt="官窑粉青釉葵花式折沿洗" class="card-img">
+                    <div class="card-content">
+                        <h3>官窑粉青釉葵口洗</h3>
+                        <p>通体施粉青厚釉，温润如玉。器型优雅，无纹而雅。这份极致的素净，完美诠释了“道在器中”的宋式美学。</p>
+                        <a href="https://www.dpm.org.cn/collection/ceramics/228596.html" target="_blank" class="card-button">查看故宫藏品详情</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="era-section qing-section">
             <h2 class="qing-title">清 · 虚实之韵</h2>
             <p class="intro" style="text-align: center; margin-bottom: 30px; font-style: italic;">“留白藏意，以空衬满，器中有画，画中有诗”</p>
-           <div class="gallery">
-    <!-- 清代文物卡片 - 图片链接已更新为永久图床链接 -->
-    <div class="porcelain-card">
-        <img src="https://s2.loli.net/2024/07/21/STU901vwx234.jpg" alt="茶叶末釉纸槌瓶" class="card-img">
-        <div class="card-content">
-            <h3>茶叶末釉纸槌瓶</h3>
-            <p>通体一色，无任何纹饰。其留白，是登峰造极的工艺控制——釉色匀净古雅，器型饱满流畅，展现了“无饰之饰”的自信。</p>
-            <a href="https://www.dpm.org.cn/collection/ceramics/231710.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-        </div>
-    </div>
-    <div class="porcelain-card">
-        <img src="https://s2.loli.net/2024/07/21/YZA567bcd890.jpg" alt="淡黄地珐琅彩兰石纹碗" class="card-img">
-        <div class="card-content">
-            <h3>雍正淡黄地珐琅彩兰石纹碗</h3>
-            <p>于淡黄釉地上，仅局部绘制兰石诗文，余处大面积留白。彩绘之“实”与素白之“虚”相映成趣，尽显“虚实相生”的文人画意。</p>
-            <a href="https://www.dpm.org.cn/collection/ceramics/235991.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-        </div>
-    </div>
-    <div class="porcelain-card">
-        <img src="https://s2.loli.net/2024/07/21/EFG123hij456.jpg" alt="青花山水纹瓶" class="card-img">
-        <div class="card-content">
-            <h3>青花山水纹瓶</h3>
-            <p>腹部仅绘一幅山水小景，余处皆以白釉留空。这留白仿若画中的云烟水汽，自然延展了画面意境，是“计白当黑”的绝妙运用。</p>
-            <a href="https://www.dpm.org.cn/collection/ceramics/231783.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-        </div>
-    </div>
-</div>
+            <div class="gallery">
+                <!-- 清代文物 - 图片链接已修正为GitHub Raw链接 -->
+                <div class="porcelain-card">
+                    <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E8%8C%B6%E5%8F%B6%E6%9C%AB%E9%87%89%E7%BA%B8%E6%A7%8C%E7%93%B6.png" alt="茶叶末釉纸槌瓶" class="card-img">
+                    <div class="card-content">
+                        <h3>茶叶末釉纸槌瓶</h3>
+                        <p>通体一色，无任何纹饰。其留白，是登峰造极的工艺控制——釉色匀净古雅，器型饱满流畅，展现了“无饰之饰”的自信。</p>
+                        <a href="https://www.dpm.org.cn/collection/ceramics/231710.html" target="_blank" class="card-button">查看故宫藏品详情</a>
+                    </div>
+                </div>
+                <div class="porcelain-card">
+                    <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E6%B7%A1%E9%BB%84%E5%9C%B0%E7%8F%84%E7%90%85%E5%BD%A9%E5%85%B0%E7%9F%B3%E7%BA%B9%E7%A2%97.png" alt="淡黄地珐琅彩兰石纹碗" class="card-img">
+                    <div class="card-content">
+                        <h3>雍正淡黄地珐琅彩兰石纹碗</h3>
+                        <p>于淡黄釉地上，仅局部绘制兰石诗文，余处大面积留白。彩绘之“实”与素白之“虚”相映成趣，尽显“虚实相生”的文人画意。</p>
+                        <a href="https://www.dpm.org.cn/collection/ceramics/235991.html" target="_blank" class="card-button">查看故宫藏品详情</a>
+                    </div>
+                </div>
+                <div class="porcelain-card">
+                    <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E9%9D%92%E8%8A%B1%E5%B1%B1%E6%B0%B4%E7%BA%B9%E7%93%B6.png" alt="青花山水纹瓶" class="card-img">
+                    <div class="card-content">
+                        <h3>青花山水纹瓶</h3>
+                        <p>腹部仅绘一幅山水小景，余处皆以白釉留空。这留白仿若画中的云烟水汽，自然延展了画面意境，是“计白当黑”的绝妙运用。</p>
+                        <a href="https://www.dpm.org.cn/collection/ceramics/231783.html" target="_blank" class="card-button">查看故宫藏品详情</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer>
@@ -166,21 +158,5 @@
             <p>真正的美，从不需满溢；留一分空白，便多一分悠长的韵味。</p>
         </footer>
     </div>
-
-    <script>
-        // 可选：添加简单的图片加载失败处理
-        document.addEventListener('DOMContentLoaded', function() {
-            const images = document.querySelectorAll('.card-img');
-            images.forEach(img => {
-                img.onerror = function() {
-                    console.log('图片加载失败:', this.src);
-                    // 可以在这里设置一个备用占位图
-                    // this.src = 'path/to/placeholder.jpg';
-                };
-            });
-        });
-    </script>
 </body>
-
 </html>
-
