@@ -6,79 +6,30 @@
     <title>留白的意蕴：宋与清瓷器鉴赏</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
-            background-color: #fafafa;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        body { font-family: sans-serif; background: #f8f5f2; color: #333; line-height: 1.6; padding: 20px; max-width: 1200px; margin: 0 auto; }
         .container { background: white; border-radius: 12px; padding: 40px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); }
         header { text-align: center; margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid #eee; }
-        h1 { font-size: 2.8em; color: #2c3e50; margin-bottom: 10px; letter-spacing: 2px; }
+        h1 { font-size: 2.8em; color: #2c3e50; margin-bottom: 10px; }
         .subtitle { font-size: 1.3em; color: #7f8c8d; font-style: italic; margin-bottom: 25px; }
-        .intro { color: #666; max-width: 800px; margin: 0 auto 15px; font-size: 1.05em; }
+        .intro { color: #666; max-width: 800px; margin: 0 auto 15px; }
         .era-section { margin-bottom: 60px; }
-        h2 { font-size: 2em; color: #2c3e50; padding-bottom: 15px; margin-bottom: 30px; border-bottom: 2px solid; text-align: center; letter-spacing: 1px; }
+        h2 { font-size: 2em; color: #2c3e50; padding-bottom: 15px; margin-bottom: 30px; border-bottom: 2px solid; text-align: center; }
         .song-title { border-color: #5d8aa8; color: #5d8aa8; }
         .qing-title { border-color: #b8860b; color: #b8860b; }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 35px;
-        }
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 35px; }
         @media (max-width: 1100px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 768px) { .gallery { grid-template-columns: 1fr; } }
-        .porcelain-card {
-            background: #fff;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #f0f0f0;
-        }
-        .porcelain-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        }
-        .card-img {
-            width: 100%;
-            height: 240px;
-            object-fit: cover;
-            border-bottom: 1px solid #eee;
-            display: block;
-        }
+        .porcelain-card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease; border: 1px solid #f0f0f0; }
+        .porcelain-card:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .card-img { width: 100%; height: 240px; object-fit: cover; border-bottom: 1px solid #eee; display: block; }
         .card-content { padding: 25px; }
         .card-content h3 { font-size: 1.4em; color: #2c3e50; margin-bottom: 12px; }
         .card-content p { color: #666; font-size: 0.98em; margin-bottom: 20px; min-height: 60px; }
-        .card-button {
-            display: inline-block;
-            background-color: #5d8aa8;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            text-align: center;
-            transition: background-color 0.3s ease;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            letter-spacing: 1px;
-        }
+        .card-button { display: inline-block; background-color: #5d8aa8; color: white; padding: 12px 25px; border-radius: 25px; text-decoration: none; text-align: center; transition: background-color 0.3s ease; width: 100%; }
         .qing-section .card-button { background-color: #b8860b; }
         .card-button:hover { background-color: #4a708a; }
         .qing-section .card-button:hover { background-color: #9c7309; }
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding-top: 25px;
-            border-top: 1px solid #eee;
-            color: #95a5a6;
-            font-size: 0.9em;
-        }
+        footer { text-align: center; margin-top: 50px; padding-top: 25px; border-top: 1px solid #eee; color: #95a5a6; font-size: 0.9em; }
     </style>
 </head>
 <body>
@@ -88,71 +39,43 @@
             <p class="subtitle">宋与清，两种瓷语，一味空灵</p>
             <p class="intro">留白，是东方美学的无声诗行。它并非“未完成”的空白，而是匠心独运的巧思——以“无纹”衬“有韵”，以“虚境”载“实情”。宋代尚空灵，清代崇精巧，两种美学，共同诠释留白的深邃智慧。</p>
         </header>
-
         <section class="era-section">
             <h2 class="song-title">宋 · 空灵之境</h2>
             <p class="intro" style="text-align: center; margin-bottom: 30px; font-style: italic;">“无纹处皆是诗，无色中自有韵”</p>
             <div class="gallery">
-                <!-- 宋代文物 - 图片链接已修正为GitHub Raw链接 -->
                 <div class="porcelain-card">
                     <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E5%AE%9A%E7%AA%91%E7%99%BD%E9%87%89%E5%88%BB%E8%8A%B1%E8%8A%B1%E5%8D%89%E7%BA%B9%E6%A2%85%E7%93%B6.png" alt="定窑白釉刻花花卉纹梅瓶" class="card-img">
-                    <div class="card-content">
-                        <h3>定窑白釉刻花花卉纹梅瓶</h3>
-                        <p>白釉莹洁如雪，仅以疏朗刻花点缀。刻与不刻之间，形成精妙的虚实节奏，凸显了宋代“以简驭繁”的至高审美意趣。</p>
-                        <a href="https://www.dpm.org.cn/collection/ceramics/231242.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-                    </div>
+                    <div class="card-content"><h3>定窑白釉刻花花卉纹梅瓶</h3><p>白釉莹洁如雪，仅以疏朗刻花点缀。刻与不刻之间，形成精妙的虚实节奏，凸显了宋代“以简驭繁”的至高审美意趣。</p><a href="https://www.dpm.org.cn/collection/ceramics/231242.html" target="_blank" class="card-button">查看故宫藏品详情</a></div>
                 </div>
                 <div class="porcelain-card">
                     <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E6%B1%9D%E7%AA%91%E5%A4%A9%E9%9D%92%E9%87%89%E4%B8%89%E8%B6%B3%E6%A8%BE%E6%89%BF%E7%9B%98.png" alt="汝窑天青釉三足樽承盘" class="card-img">
-                    <div class="card-content">
-                        <h3>汝窑天青釉三足樽</h3>
-                        <p>天青一色，宛如“雨过天青云破处”。此樽不施纹饰，仅凭釉色深浅的微妙渐变与古朴器型，便构建出清寂空灵之美。</p>
-                        <a href="https://www.dpm.org.cn/collection/ceramics/228360.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-                    </div>
+                    <div class="card-content"><h3>汝窑天青釉三足樽</h3><p>天青一色，宛如“雨过天青云破处”。此樽不施纹饰，仅凭釉色深浅的微妙渐变与古朴器型，便构建出清寂空灵之美。</p><a href="https://www.dpm.org.cn/collection/ceramics/228360.html" target="_blank" class="card-button">查看故宫藏品详情</a></div>
                 </div>
                 <div class="porcelain-card">
                     <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E5%AE%98%E7%AA%91%E7%B2%89%E9%9D%92%E9%87%89%E8%91%B5%E8%8A%B1%E5%BC%8F%E6%8A%98%E6%B2%BF%E6%B4%97.png" alt="官窑粉青釉葵花式折沿洗" class="card-img">
-                    <div class="card-content">
-                        <h3>官窑粉青釉葵口洗</h3>
-                        <p>通体施粉青厚釉，温润如玉。器型优雅，无纹而雅。这份极致的素净，完美诠释了“道在器中”的宋式美学。</p>
-                        <a href="https://www.dpm.org.cn/collection/ceramics/228596.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-                    </div>
+                    <div class="card-content"><h3>官窑粉青釉葵口洗</h3><p>通体施粉青厚釉，温润如玉。器型优雅，无纹而雅。这份极致的素净，完美诠释了“道在器中”的宋式美学。</p><a href="https://www.dpm.org.cn/collection/ceramics/228596.html" target="_blank" class="card-button">查看故宫藏品详情</a></div>
                 </div>
             </div>
         </section>
-
         <section class="era-section qing-section">
             <h2 class="qing-title">清 · 虚实之韵</h2>
             <p class="intro" style="text-align: center; margin-bottom: 30px; font-style: italic;">“留白藏意，以空衬满，器中有画，画中有诗”</p>
             <div class="gallery">
-                <!-- 清代文物 - 图片链接已修正为GitHub Raw链接 -->
                 <div class="porcelain-card">
+                    <!-- 核心修正：此处链接已根据您的文件名“雍正款茶叶末釉纸施瓶.png”更新 -->
                     <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E9%9B%8D%E6%AD%A3%E6%AC%BE%E8%8C%B6%E5%8F%B6%E6%9C%AB%E9%87%89%E7%BA%B8%E6%96%BD%E7%93%B6.png" alt="茶叶末釉纸槌瓶" class="card-img">
-                    <div class="card-content">
-                        <h3>茶叶末釉纸槌瓶</h3>
-                        <p>通体一色，无任何纹饰。其留白，是登峰造极的工艺控制——釉色匀净古雅，器型饱满流畅，展现了“无饰之饰”的自信。</p>
-                        <a href="https://www.dpm.org.cn/collection/ceramics/231710.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-                    </div>
+                    <div class="card-content"><h3>茶叶末釉纸槌瓶</h3><p>通体一色，无任何纹饰。其留白，是登峰造极的工艺控制——釉色匀净古雅，器型饱满流畅，展现了“无饰之饰”的自信。</p><a href="https://www.dpm.org.cn/collection/ceramics/231710.html" target="_blank" class="card-button">查看故宫藏品详情</a></div>
                 </div>
                 <div class="porcelain-card">
                     <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E6%B7%A1%E9%BB%84%E5%9C%B0%E7%8F%84%E7%90%85%E5%BD%A9%E5%85%B0%E7%9F%B3%E7%BA%B9%E7%A2%97.png" alt="淡黄地珐琅彩兰石纹碗" class="card-img">
-                    <div class="card-content">
-                        <h3>雍正淡黄地珐琅彩兰石纹碗</h3>
-                        <p>于淡黄釉地上，仅局部绘制兰石诗文，余处大面积留白。彩绘之“实”与素白之“虚”相映成趣，尽显“虚实相生”的文人画意。</p>
-                        <a href="https://www.dpm.org.cn/collection/ceramics/235991.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-                    </div>
+                    <div class="card-content"><h3>雍正淡黄地珐琅彩兰石纹碗</h3><p>于淡黄釉地上，仅局部绘制兰石诗文，余处大面积留白。彩绘之“实”与素白之“虚”相映成趣，尽显“虚实相生”的文人画意。</p><a href="https://www.dpm.org.cn/collection/ceramics/235991.html" target="_blank" class="card-button">查看故宫藏品详情</a></div>
                 </div>
                 <div class="porcelain-card">
                     <img src="https://raw.githubusercontent.com/Windy123345/windy-room/main/%E9%9D%92%E8%8A%B1%E5%B1%B1%E6%B0%B4%E7%BA%B9%E7%93%B6.png" alt="青花山水纹瓶" class="card-img">
-                    <div class="card-content">
-                        <h3>青花山水纹瓶</h3>
-                        <p>腹部仅绘一幅山水小景，余处皆以白釉留空。这留白仿若画中的云烟水汽，自然延展了画面意境，是“计白当黑”的绝妙运用。</p>
-                        <a href="https://www.dpm.org.cn/collection/ceramics/231783.html" target="_blank" class="card-button">查看故宫藏品详情</a>
-                    </div>
+                    <div class="card-content"><h3>青花山水纹瓶</h3><p>腹部仅绘一幅山水小景，余处皆以白釉留空。这留白仿若画中的云烟水汽，自然延展了画面意境，是“计白当黑”的绝妙运用。</p><a href="https://www.dpm.org.cn/collection/ceramics/231783.html" target="_blank" class="card-button">查看故宫藏品详情</a></div>
                 </div>
             </div>
         </section>
-
         <footer>
             <p>本页面为“留白的意蕴”展览拓展内容，所有文物信息与图片均链接自故宫博物院官网。</p>
             <p>真正的美，从不需满溢；留一分空白，便多一分悠长的韵味。</p>
